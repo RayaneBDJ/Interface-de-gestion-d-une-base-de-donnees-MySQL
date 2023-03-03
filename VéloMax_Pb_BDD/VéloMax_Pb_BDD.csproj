@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1AA0B15D-7D51-4EA5-A6A4-84F759E98BF2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VéloMax_Pb_BDD</RootNamespace>
+    <AssemblyName>VéloMax_Pb_BDD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.29\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.29\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.29\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accueil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Accueil.Designer.cs">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutClient.Designer.cs">
+      <DependentUpon>AjoutClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutCommande.Designer.cs">
+      <DependentUpon>AjoutCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutFournisseur.Designer.cs">
+      <DependentUpon>AjoutFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutPiece.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutPiece.Designer.cs">
+      <DependentUpon>AjoutPiece.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AjoutVelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjoutVelo.Designer.cs">
+      <DependentUpon>AjoutVelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Approvisionnement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Approvisionnement.Designer.cs">
+      <DependentUpon>Approvisionnement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataClient.Designer.cs">
+      <DependentUpon>DataClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataCommande.Designer.cs">
+      <DependentUpon>DataCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFournisseur.Designer.cs">
+      <DependentUpon>DataFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataPiece.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataPiece.Designer.cs">
+      <DependentUpon>DataPiece.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataVelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataVelo.Designer.cs">
+      <DependentUpon>DataVelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Evaluateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluateur.Designer.cs">
+      <DependentUpon>Evaluateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fidelio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fidelio.Designer.cs">
+      <DependentUpon>Fidelio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionExterne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionExterne.Designer.cs">
+      <DependentUpon>GestionExterne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionInterne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionInterne.Designer.cs">
+      <DependentUpon>GestionInterne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoriqueAppFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoriqueAppFournisseur.Designer.cs">
+      <DependentUpon>HistoriqueAppFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAJClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAJClient.Designer.cs">
+      <DependentUpon>MAJClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAJCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAJCommande.Designer.cs">
+      <DependentUpon>MAJCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MajFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MajFournisseur.Designer.cs">
+      <DependentUpon>MajFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAJPiece.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAJPiece.Designer.cs">
+      <DependentUpon>MAJPiece.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAJVelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAJVelo.Designer.cs">
+      <DependentUpon>MAJVelo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MethodesDataSQL.cs" />
+    <Compile Include="ModuleStatistiques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleStatistiques.Designer.cs">
+      <DependentUpon>ModuleStatistiques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stockage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stockage.Designer.cs">
+      <DependentUpon>Stockage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppClient.Designer.cs">
+      <DependentUpon>SuppClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppCommande.Designer.cs">
+      <DependentUpon>SuppCommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppFournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppFournisseur.Designer.cs">
+      <DependentUpon>SuppFournisseur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppPiece.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppPiece.Designer.cs">
+      <DependentUpon>SuppPiece.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuppVelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuppVelo.Designer.cs">
+      <DependentUpon>SuppVelo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accueil.resx">
+      <DependentUpon>Accueil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutClient.resx">
+      <DependentUpon>AjoutClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutCommande.resx">
+      <DependentUpon>AjoutCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutFournisseur.resx">
+      <DependentUpon>AjoutFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutPiece.resx">
+      <DependentUpon>AjoutPiece.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AjoutVelo.resx">
+      <DependentUpon>AjoutVelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Approvisionnement.resx">
+      <DependentUpon>Approvisionnement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataClient.resx">
+      <DependentUpon>DataClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataCommande.resx">
+      <DependentUpon>DataCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFournisseur.resx">
+      <DependentUpon>DataFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataPiece.resx">
+      <DependentUpon>DataPiece.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataVelo.resx">
+      <DependentUpon>DataVelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evaluateur.resx">
+      <DependentUpon>Evaluateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fidelio.resx">
+      <DependentUpon>Fidelio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionExterne.resx">
+      <DependentUpon>GestionExterne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionInterne.resx">
+      <DependentUpon>GestionInterne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoriqueAppFournisseur.resx">
+      <DependentUpon>HistoriqueAppFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAJClient.resx">
+      <DependentUpon>MAJClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MajFournisseur.resx">
+      <DependentUpon>MajFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAJPiece.resx">
+      <DependentUpon>MAJPiece.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAJVelo.resx">
+      <DependentUpon>MAJVelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModuleStatistiques.resx">
+      <DependentUpon>ModuleStatistiques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Stockage.resx">
+      <DependentUpon>Stockage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppClient.resx">
+      <DependentUpon>SuppClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppCommande.resx">
+      <DependentUpon>SuppCommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppFournisseur.resx">
+      <DependentUpon>SuppFournisseur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppPiece.resx">
+      <DependentUpon>SuppPiece.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuppVelo.resx">
+      <DependentUpon>SuppVelo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
