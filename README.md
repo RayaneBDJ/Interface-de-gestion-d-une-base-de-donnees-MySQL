@@ -12,7 +12,7 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
 La Base de données 
 
 # Interface de gestion 
-<br><br>
+<br>
 - Etape 1 : Choisissez le type de gestion (gestion des acteurs externes ou internes)
 
 <img title="a title" alt="Alt text" src="/Images/ChoixGestion.png">
@@ -20,7 +20,7 @@ La Base de données
 - Etape 2 : Choisissez quel aspect de la bdd vous voulez modifier (ajouter, supprimer ou mettre à jour un individu de la bdd) ou consulter. 
 
 
-<img src="/Images/GestionInterne.png" width="300" align="center"/>
+<img src="/Images/GestionInterne.png" width="250" align="center"/>
 <img src="/Images/GestionExterne.png" width="300" align="center"/> 
 
 
@@ -31,8 +31,8 @@ La Base de données
 
 
   <img src="/Images/AjoutClient.png" width="250" align="center"/>
-  <img src="/Images/SuppresionClient.png" width="250" align="center"/> 
-
+  <img src="/Images/SuppresionClient.png" width="250" align="center"/>
+  
   <img src="/Images/MAJClient.png" width="250" align="center"/>
   <img src="/Images/DataClient.png" width="250" align="center"/> 
 
