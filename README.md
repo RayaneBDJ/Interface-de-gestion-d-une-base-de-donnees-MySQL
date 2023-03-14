@@ -21,18 +21,18 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
 
 - Etape 2 : Choisissez quel aspect de la bdd vous voulez modifier (ajouter, supprimer ou mettre à jour un individu de la bdd) ou consulter. 
 
-<p align="center">
+
 <table>
   <tr>
     <td>Gestion Interne</td>
      <td>Gestion Externe</td>
   </tr>
   <tr>
-    <td><img src="/Images/GestionInterne.png" width=270 </td>
-    <td><img src="/Images/GestionExterne.png" width=270 </td>
+    <td align="center"><img src="/Images/GestionInterne.png" width=270 </td>
+    <td align="center"><img src="/Images/GestionExterne.png" width=270 </td>
   </tr>
  </table>
-</p>
+
 
 
 
@@ -40,26 +40,26 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
 
 
 
-<p align="center">
+
 <table>
   <tr>
     <td>Add Client</td>
      <td>Delete Client</td>
   </tr>
   <tr>
-    <td>  <img src="/Images/AjoutClient.png" width="250" align="center"/></td>
-    <td><img src="/Images/SuppresionClient.png" width="250" align="center"/></td>
+    <td align="center">  <img src="/Images/AjoutClient.png" width="250" align="center"/></td>
+    <td align="center"><img src="/Images/SuppresionClient.png" width="250" align="center"/></td>
   </tr>
    <tr>
     <td>Update Client</td>
      <td>Consult Clients</td>
   </tr>
   <tr>
-    <td><img src="/Images/MAJClient.png" width="250" align="center"/></td>
-    <td><img src="/Images/DataClient.png" width="250" align="center"/> </td>
+    <td align="center"><img src="/Images/MAJClient.png" width="250" align="center"/></td>
+    <td align="center"><img src="/Images/DataClient.png" width="250" align="center"/> </td>
   </tr>
  </table>
- </p>
+
  
 
 
