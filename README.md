@@ -8,7 +8,7 @@ VéloMax est une compagnie qui vend des bicyclettes et des pièces de rechange p
 Voici le schéma E/A (Entité/Association) capable de représenter la structure de la nouvelle base de données : 
 
 <p align="center">
-<img title="a title" alt="Alt text" src="/Images/SchémaEAPB2.0.png" width=400 />
+<img title="a title" alt="Alt text" src="/Images/SchémaEAPB2.0.png" width=500 />
 </p>
 
 # Interface de gestion 
@@ -16,11 +16,12 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
 - Etape 1 : Choisissez le type de gestion (gestion des acteurs externes ou internes)
 <br><br>
 <p align="center">
-<img title="a title" alt="Alt text" src="/Images/ChoixGestion.png" width=400  />
+<img title="a title" alt="Alt text" src="/Images/ChoixGestion.png" width=500  />
 </p>
 
 - Etape 2 : Choisissez quel aspect de la bdd vous voulez modifier (ajouter, supprimer ou mettre à jour un individu de la bdd) ou consulter. 
 
+<p align="center">
 <table>
   <tr>
     <td>Gestion Interne</td>
@@ -31,6 +32,7 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
     <td><img src="/Images/GestionExterne.png" width=270 </td>
   </tr>
  </table>
+</p>
 
 
 
@@ -38,7 +40,7 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
 
 
 
-
+<p align="center">
 <table>
   <tr>
     <td>Add Client</td>
@@ -57,6 +59,7 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
     <td><img src="/Images/DataClient.png" width="250" align="center"/> </td>
   </tr>
  </table>
+ </p>
  
 
 
