@@ -25,16 +25,6 @@ La Base de données
 
 <img title="a title" alt="Alt text" src="/images/.svg">
 
-<br>
-Example :
-<br>
-- Etape 1 : Nous choisissons la gestion interne.
-
-
-- Etape 2 : Nous ajoutons un client.
-
-
-- Etape 3 : Nous vérifions l'ajout en consultant la table.
 
 
 
