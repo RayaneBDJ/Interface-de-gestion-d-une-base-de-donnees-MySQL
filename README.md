@@ -7,15 +7,14 @@ VéloMax est une compagnie qui vend des bicyclettes et des pièces de rechange p
 
 Voici le schéma E/A (Entité/Association) capable de représenter la structure de la nouvelle base de données : 
 
+<img title="a title" alt="Alt text" src="/Images/SchémaEAPB2.0.png" width=400 align="center" />
 
-
-La Base de données 
 
 # Interface de gestion 
 <br>
 - Etape 1 : Choisissez le type de gestion (gestion des acteurs externes ou internes)
 <br><br>
-<img title="a title" alt="Alt text" src="/Images/ChoixGestion.png">
+<img title="a title" alt="Alt text" src="/Images/ChoixGestion.png" width=400 align="center" />
 
 - Etape 2 : Choisissez quel aspect de la bdd vous voulez modifier (ajouter, supprimer ou mettre à jour un individu de la bdd) ou consulter. 
 
