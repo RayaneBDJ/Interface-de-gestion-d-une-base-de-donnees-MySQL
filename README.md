@@ -20,24 +20,22 @@ La Base de données
 - Etape 2 : Choisissez quel aspect de la bdd vous voulez modifier (ajouter, supprimer ou mettre à jour un individu de la bdd) ou consulter. 
 
 
-  <img src="/Images/GestionInterne.png" width="300" align="center"/>
-  <img src="/Images/GestionExterne.png" width="400" align="center"/> 
-</p>
+<img src="/Images/GestionInterne.png" width="300" align="center"/>
+<img src="/Images/GestionExterne.png" width="350" align="center"/> 
+
 
 
 
 - Etape 3 : Exemple (Interfaces d'ajout, de suppression, de mis à jour et de consultation des clients)
 
 
-<p float="left">
+
   <img src="/Images/AjoutClient.png" width="250" align="center"/>
   <img src="/Images/SuppresionClient.png" width="250" align="center"/> 
-</p>
 
-<p float="left">
   <img src="/Images/MAJClient.png" width="250" align="center"/>
   <img src="/Images/DataClient.png" width="250" align="center"/> 
-</p>
+
 
 
 
