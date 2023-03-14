@@ -21,7 +21,7 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
 
 - Etape 2 : Choisissez quel aspect de la bdd vous voulez modifier (ajouter, supprimer ou mettre à jour un individu de la bdd) ou consulter. 
 
-
+<div align="center">
 <table>
   <tr>
     <td>Gestion Interne</td>
@@ -32,6 +32,7 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
     <td align="center"><img src="/Images/GestionExterne.png" width=270 </td>
   </tr>
  </table>
+ </div>
 
 
 
@@ -40,7 +41,7 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
 
 
 
-
+<div align="center">
 <table>
   <tr>
     <td>Add Client</td>
@@ -59,6 +60,7 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
     <td align="center"><img src="/Images/DataClient.png" width="250" align="center"/> </td>
   </tr>
  </table>
+  </div>
 
  
 
