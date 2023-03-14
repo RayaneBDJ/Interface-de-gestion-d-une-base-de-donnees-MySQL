@@ -14,7 +14,7 @@ La Base de données
 # Interface de gestion 
 <br>
 - Etape 1 : Choisissez le type de gestion (gestion des acteurs externes ou internes)
-
+<br><br>
 <img title="a title" alt="Alt text" src="/Images/ChoixGestion.png">
 
 - Etape 2 : Choisissez quel aspect de la bdd vous voulez modifier (ajouter, supprimer ou mettre à jour un individu de la bdd) ou consulter. 
@@ -36,11 +36,27 @@ La Base de données
 
 
 
-  <img src="/Images/AjoutClient.png" width="250" align="center"/>
-  <img src="/Images/SuppresionClient.png" width="250" align="center"/>
-  
-  <img src="/Images/MAJClient.png" width="250" align="center"/>
-  <img src="/Images/DataClient.png" width="250" align="center"/> 
+
+<table>
+  <tr>
+    <td>Add Client</td>
+     <td>Delete Client</td>
+  </tr>
+  <tr>
+    <td>  <img src="/Images/AjoutClient.png" width="250" align="center"/></td>
+    <td><img src="/Images/SuppresionClient.png" width="250" align="center"/></td>
+  </tr>
+   <tr>
+    <td>Update Client</td>
+     <td>Consult Clients</td>
+  </tr>
+  <tr>
+    <td><img src="/Images/MAJClient.png" width="250" align="center"/></td>
+    <td><img src="/Images/DataClient.png" width="250" align="center"/> </td>
+  </tr>
+ </table>
+ 
+
 
 
 
