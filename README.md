@@ -30,7 +30,7 @@ La Base de données
 
 <p float="left">
   <img src="/Images/AjoutClient.png" width="100" />
-  <img src="/Images/SuprresionClient.png" width="100" /> 
+  <img src="/Images/SuppresionClient.png" width="100" /> 
 </p>
 
 <p float="left">
