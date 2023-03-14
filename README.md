@@ -25,8 +25,8 @@ La Base de données
      <td>Gestion Externe</td>
   </tr>
   <tr>
-    <td><img src="/Images/GestionInterne.png" width=270 height=480></td>
-    <td><img src="screenshots/GestionExterne.png" width=270 height=480></td>
+    <td><img src="/Images/GestionInterne.png" width=270 </td>
+    <td><img src="/Images/GestionExterne.png" width=270 </td>
   </tr>
  </table>
 
