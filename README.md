@@ -12,7 +12,7 @@ Voici le schéma E/A (Entité/Association) capable de représenter la structure 
 </p>
 
 # Interface de gestion 
-<br>
+
 - Etape 1 : Choisissez le type de gestion (gestion des acteurs externes ou internes)
 <br><br>
 <p align="center">
