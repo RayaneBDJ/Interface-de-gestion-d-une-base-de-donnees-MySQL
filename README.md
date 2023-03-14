@@ -19,10 +19,9 @@ La Base de données
 
 - Etape 2 : Choisissez quel aspect de la bdd vous voulez modifier (ajouter, supprimer ou mettre à jour un individu de la bdd) ou consulter. 
 
-<center>
 
-  <img src="/Images/GestionInterne.png" width="250" align="center"/>
-  <img src="/Images/GestionExterne.png" width="250" align="center"/> 
+  <img src="/Images/GestionInterne.png" width="300" align="center"/>
+  <img src="/Images/GestionExterne.png" width="300" align="center"/> 
 </p>
 
 
