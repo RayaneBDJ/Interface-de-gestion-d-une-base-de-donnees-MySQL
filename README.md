@@ -21,7 +21,7 @@ La Base de données
 
 
 <img src="/Images/GestionInterne.png" width="300" align="center"/>
-<img src="/Images/GestionExterne.png" width="350" align="center"/> 
+<img src="/Images/GestionExterne.png" width="300" align="center"/> 
 
 
 
